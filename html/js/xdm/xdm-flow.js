@@ -1,5 +1,5 @@
 window.__XDM_ACCEL_FLOW__ = {
-  "contentHash": "1dbab4ee152b167f9bd42b75d0554fa7525d3ca89db7e2e5465996a9954275c9",
+  "contentHash": "a8e9b6442a13b4a606e9158f67a1c531ebab35a94084d9851c5e4fa693d62dda",
   "edgeDomain": "aeppsemea.data.adobedc.net",
   "flow": {
     "config": {
@@ -549,6 +549,23 @@ window.__XDM_ACCEL_FLOW__ = {
                       },
                       "category": {
                         "key": "data.service_category"
+                      }
+                    }
+                  }
+                }
+              },
+              "web": {
+                "map": {
+                  "webPageDetails": {
+                    "map": {
+                      "name": {
+                        "key": "data.page_name"
+                      },
+                      "URL": {
+                        "key": "data.page_url"
+                      },
+                      "siteSection": {
+                        "key": "data.site_section"
                       }
                     }
                   }
