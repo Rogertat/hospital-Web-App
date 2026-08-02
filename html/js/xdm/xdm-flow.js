@@ -1,5 +1,5 @@
 window.__XDM_ACCEL_FLOW__ = {
-  "contentHash": "a8e9b6442a13b4a606e9158f67a1c531ebab35a94084d9851c5e4fa693d62dda",
+  "contentHash": "a7bdae495cbb30923f0a62f25a6c16b0825bdfaa0dcf104847c083b683a73189",
   "edgeDomain": "aeppsemea.data.adobedc.net",
   "flow": {
     "config": {
@@ -131,7 +131,10 @@ window.__XDM_ACCEL_FLOW__ = {
                       },
                       "email": {
                         "key": "data.email",
-                        "fn": "hash.sha256"
+                        "fn": [
+                          "normalize.lowercase",
+                          "hash.sha256"
+                        ]
                       },
                       "phone": {
                         "key": "data.phone",
@@ -169,7 +172,10 @@ window.__XDM_ACCEL_FLOW__ = {
               {
                 "id": {
                   "key": "data.email",
-                  "fn": "hash.sha256"
+                  "fn": [
+                    "normalize.lowercase",
+                    "hash.sha256"
+                  ]
                 },
                 "authenticatedState": "ambiguous"
               }
@@ -217,7 +223,10 @@ window.__XDM_ACCEL_FLOW__ = {
                       },
                       "email": {
                         "key": "data.email",
-                        "fn": "hash.sha256"
+                        "fn": [
+                          "normalize.lowercase",
+                          "hash.sha256"
+                        ]
                       },
                       "phone": {
                         "key": "data.phone",
@@ -255,7 +264,10 @@ window.__XDM_ACCEL_FLOW__ = {
               {
                 "id": {
                   "key": "data.email",
-                  "fn": "hash.sha256"
+                  "fn": [
+                    "normalize.lowercase",
+                    "hash.sha256"
+                  ]
                 },
                 "authenticatedState": "ambiguous"
               }
@@ -303,7 +315,10 @@ window.__XDM_ACCEL_FLOW__ = {
                       },
                       "email": {
                         "key": "data.email",
-                        "fn": "hash.sha256"
+                        "fn": [
+                          "normalize.lowercase",
+                          "hash.sha256"
+                        ]
                       },
                       "phone": {
                         "key": "data.phone",
@@ -341,7 +356,10 @@ window.__XDM_ACCEL_FLOW__ = {
               {
                 "id": {
                   "key": "data.email",
-                  "fn": "hash.sha256"
+                  "fn": [
+                    "normalize.lowercase",
+                    "hash.sha256"
+                  ]
                 },
                 "authenticatedState": "ambiguous"
               }
@@ -389,7 +407,10 @@ window.__XDM_ACCEL_FLOW__ = {
                       },
                       "email": {
                         "key": "data.email",
-                        "fn": "hash.sha256"
+                        "fn": [
+                          "normalize.lowercase",
+                          "hash.sha256"
+                        ]
                       },
                       "phone": {
                         "key": "data.phone",
@@ -427,7 +448,10 @@ window.__XDM_ACCEL_FLOW__ = {
               {
                 "id": {
                   "key": "data.email",
-                  "fn": "hash.sha256"
+                  "fn": [
+                    "normalize.lowercase",
+                    "hash.sha256"
+                  ]
                 },
                 "authenticatedState": "ambiguous"
               }
