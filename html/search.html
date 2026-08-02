@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Starter Page - Medilab Bootstrap Template</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+  <title>Search — XeraCare Hospital</title>
+  <meta name="description" content="Search XeraCare Hospital services by name, department or category.">
+  <meta name="keywords" content="XeraCare, hospital, demo, appointments">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -34,18 +34,19 @@
   * Updated: Aug 07 2024 with Bootstrap v5.3.3
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
+  * Rebranded as "XeraCare Hospital" — a fictional demo site for the
+  * XDM Accelerator analytics pilot. No real medical services are offered.
   ======================================================== -->
 </head>
 
 <body class="starter-page-page">
-
   <header id="header" class="header sticky-top">
 
     <div class="topbar d-flex align-items-center">
       <div class="container d-flex justify-content-center justify-content-md-between">
         <div class="contact-info d-flex align-items-center">
-          <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com">contact@example.com</a></i>
-          <i class="bi bi-phone d-flex align-items-center ms-4"><span>+1 5589 55488 55</span></i>
+          <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:care@xeracare.example">care@xeracare.example</a></i>
+          <i class="bi bi-phone d-flex align-items-center ms-4"><span>+1 (555) 010-4400</span></i>
         </div>
         <div class="social-links d-none d-md-flex align-items-center">
           <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
@@ -60,41 +61,21 @@
 
       <div class="container position-relative d-flex align-items-center justify-content-between">
         <a href="index.html" class="logo d-flex align-items-center me-auto">
-          <!-- Uncomment the line below if you also wish to use an image logo -->
-          <!-- <img src="assets/img/logo.png" alt=""> -->
-          <h1 class="sitename">Medilab</h1>
+          <h1 class="sitename">XeraCare Hospital</h1>
         </a>
 
         <nav id="navmenu" class="navmenu">
           <ul>
-            <li><a href="#hero">Home<br></a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#departments">Departments</a></li>
-            <li><a href="#doctors">Doctors</a></li>
-            <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-              <ul>
-                <li><a href="#">Dropdown 1</a></li>
-                <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                  <ul>
-                    <li><a href="#">Deep Dropdown 1</a></li>
-                    <li><a href="#">Deep Dropdown 2</a></li>
-                    <li><a href="#">Deep Dropdown 3</a></li>
-                    <li><a href="#">Deep Dropdown 4</a></li>
-                    <li><a href="#">Deep Dropdown 5</a></li>
-                  </ul>
-                </li>
-                <li><a href="#">Dropdown 2</a></li>
-                <li><a href="#">Dropdown 3</a></li>
-                <li><a href="#">Dropdown 4</a></li>
-              </ul>
-            </li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="doctors.html">Doctors</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="search.html" class="active">Search</a></li>
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
 
-        <a class="cta-btn d-none d-sm-block" href="#appointment">Make an Appointment</a>
+        <a class="cta-btn d-none d-sm-block" href="appointment.html">Book an Appointment</a>
 
       </div>
 
@@ -110,8 +91,8 @@
         <div class="container">
           <div class="row d-flex justify-content-center text-center">
             <div class="col-lg-8">
-              <h1>Starter Page</h1>
-              <p class="mb-0">Odio et unde deleniti. Deserunt numquam exercitationem. Officiis quo odio sint voluptas consequatur ut a odio voluptatem. Sit dolorum debitis veritatis natus dolores. Quasi ratione sint. Sit quaerat ipsum dolorem.</p>
+              <h1>Search</h1>
+              <p class="mb-0">Find the right service by name, department or category — for example “cardiology”, “check-up” or “eye”.</p>
             </div>
           </div>
         </div>
@@ -120,26 +101,33 @@
         <div class="container">
           <ol>
             <li><a href="index.html">Home</a></li>
-            <li class="current">Starter Page</li>
+            <li class="current">Search</li>
           </ol>
         </div>
       </nav>
     </div><!-- End Page Title -->
 
-    <!-- Starter Section Section -->
-    <section id="starter-section" class="starter-section section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Starter Section</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
+    <!-- Search Section -->
+    <section id="search-section" class="section">
 
       <div class="container" data-aos="fade-up">
-        <p>Use this page as a starter for your own custom pages.</p>
+
+        <form action="search.html" method="get" class="row g-2 justify-content-center" role="search">
+          <div class="col-md-6">
+            <input type="text" class="form-control form-control-lg" name="q" id="searchInput" placeholder="Search services, departments, categories&hellip;" aria-label="Search services">
+          </div>
+          <div class="col-md-auto">
+            <button type="submit" class="btn btn-primary btn-lg w-100">Search</button>
+          </div>
+        </form>
+
+        <div id="searchSummary" class="text-center mt-4"></div>
+
+        <div id="searchResults" class="row gy-4 mt-1"></div>
+
       </div>
 
-    </section><!-- /Starter Section Section -->
+    </section><!-- /Search Section -->
 
   </main>
 
@@ -149,63 +137,59 @@
       <div class="row gy-4">
         <div class="col-lg-4 col-md-6 footer-about">
           <a href="index.html" class="logo d-flex align-items-center">
-            <span class="sitename">Medilab</span>
+            <span class="sitename">XeraCare Hospital</span>
           </a>
           <div class="footer-contact pt-3">
-            <p>A108 Adam Street</p>
-            <p>New York, NY 535022</p>
-            <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
-            <p><strong>Email:</strong> <span>info@example.com</span></p>
+            <p>200 Harbor Health Way</p>
+            <p>Meridian City, MC 90210</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>+1 (555) 010-4400</span></p>
+            <p><strong>Email:</strong> <span>care@xeracare.example</span></p>
           </div>
           <div class="social-links d-flex mt-4">
-            <a href=""><i class="bi bi-twitter-x"></i></a>
-            <a href=""><i class="bi bi-facebook"></i></a>
-            <a href=""><i class="bi bi-instagram"></i></a>
-            <a href=""><i class="bi bi-linkedin"></i></a>
+            <a href="#"><i class="bi bi-twitter-x"></i></a>
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
           </div>
         </div>
 
         <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Useful Links</h4>
+          <h4>Quick Links</h4>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Terms of service</a></li>
-            <li><a href="#">Privacy policy</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="doctors.html">Doctors</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="appointment.html">Book an Appointment</a></li>
           </ul>
         </div>
 
         <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Our Services</h4>
+          <h4>Departments</h4>
           <ul>
-            <li><a href="#">Web Design</a></li>
-            <li><a href="#">Web Development</a></li>
-            <li><a href="#">Product Management</a></li>
-            <li><a href="#">Marketing</a></li>
-            <li><a href="#">Graphic Design</a></li>
+            <li><a href="service-card-consult.html">Cardiology</a></li>
+            <li><a href="service-neuro-consult.html">Neurology</a></li>
+            <li><a href="service-pedia-check.html">Pediatrics</a></li>
+            <li><a href="service-eye-exam.html">Ophthalmology</a></li>
+            <li><a href="services.html">All Services</a></li>
           </ul>
         </div>
 
         <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Hic solutasetp</h4>
+          <h4>Patients</h4>
           <ul>
-            <li><a href="#">Molestiae accusamus iure</a></li>
-            <li><a href="#">Excepturi dignissimos</a></li>
-            <li><a href="#">Suscipit distinctio</a></li>
-            <li><a href="#">Dilecta</a></li>
-            <li><a href="#">Sit quas consectetur</a></li>
+            <li><a href="appointment.html">Request a Visit</a></li>
+            <li><a href="search.html">Find a Service</a></li>
+            <li><a href="about.html#faq">Visiting Hours</a></li>
+            <li><a href="about.html#faq">Insurance &amp; Billing</a></li>
+            <li><a href="about.html">Our Story</a></li>
           </ul>
         </div>
 
         <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Nobis illum</h4>
+          <h4>About This Site</h4>
           <ul>
-            <li><a href="#">Ipsam</a></li>
-            <li><a href="#">Laudantium dolorum</a></li>
-            <li><a href="#">Dinera</a></li>
-            <li><a href="#">Trodelas</a></li>
-            <li><a href="#">Flexo</a></li>
+            <li><a href="about.html">XeraCare Hospital is a fictional brand built to demonstrate a web analytics pipeline. No real medical services are offered.</a></li>
           </ul>
         </div>
 
@@ -213,18 +197,15 @@
     </div>
 
     <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">Medilab</strong> <span>All Rights Reserved</span></p>
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">XeraCare Hospital</strong> <span>All Rights Reserved — fictional demo site</span></p>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> Distributed by  <a href="https://themewagon.com">ThemeWagon</a>
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> Distributed by <a href="https://themewagon.com">ThemeWagon</a>
       </div>
     </div>
 
   </footer>
-
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
@@ -233,14 +214,23 @@
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
-  <!-- Main JS File -->
+  <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!-- xdm-accelerator hospital pilot: compiled flow + walkerOS 3.4.2 + WS1 aep-edge runtime.
+       Deployed by build-site.mjs into html/js/xdm/ — these 404 until the pilot deploy (expected).
+       Order is strict and must not change. -->
+  <script src="js/xdm/xdm-flow.js"></script>
+  <script src="js/xdm/walker-3.4.2.js"></script>
+  <script src="js/xdm/xdm-runtime.js"></script>
+
+  <!-- Site data-layer instrumentation (canonical event producer) -->
+  <script src="js/main.js"></script>
 
 </body>
 

@@ -4,8 +4,8 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>XeraCare Hospital — Compassionate Care, Modern Medicine</title>
-  <meta name="description" content="XeraCare Hospital demo site — specialist consultations, check-ups and diagnostics with online booking.">
+  <title>Book an Appointment — XeraCare Hospital</title>
+  <meta name="description" content="Book a consultation, check-up or diagnostic exam at XeraCare Hospital.">
   <meta name="keywords" content="XeraCare, hospital, demo, appointments">
 
   <!-- Favicons -->
@@ -39,7 +39,7 @@
   ======================================================== -->
 </head>
 
-<body class="index-page">
+<body class="starter-page-page">
   <header id="header" class="header sticky-top">
 
     <div class="topbar d-flex align-items-center">
@@ -66,7 +66,7 @@
 
         <nav id="navmenu" class="navmenu">
           <ul>
-            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="services.html">Services</a></li>
             <li><a href="doctors.html">Doctors</a></li>
             <li><a href="about.html">About</a></li>
@@ -85,188 +85,96 @@
 
   <main class="main">
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero section light-background">
-
-      <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in">
-
-      <div class="container position-relative">
-
-        <div class="welcome position-relative" data-aos="fade-down" data-aos-delay="100">
-          <h2>WELCOME TO XERACARE HOSPITAL</h2>
-          <p>Compassionate specialists, modern facilities, and appointments that fit your schedule.</p>
-        </div><!-- End Welcome -->
-
-        <div class="content row gy-4">
-          <div class="col-lg-4 d-flex align-items-stretch">
-            <div class="why-box" data-aos="zoom-out" data-aos-delay="200">
-              <h3>Why Choose XeraCare?</h3>
-              <p>
-                From first consultation to follow-up, our care teams put patients first. Four specialist
-                departments, one connected experience — and online booking that takes less than two minutes.
-              </p>
-              <div class="text-center">
-                <a href="appointment.html" id="heroCtaBook" class="more-btn"><span>Book an Appointment</span> <i class="bi bi-chevron-right"></i></a>
-              </div>
-            </div>
-          </div><!-- End Why Box -->
-
-          <div class="col-lg-8 d-flex align-items-stretch">
-            <div class="d-flex flex-column justify-content-center">
-              <div class="row gy-4">
-
-                <div class="col-xl-4 d-flex align-items-stretch">
-                  <div class="icon-box" data-aos="zoom-out" data-aos-delay="300">
-                    <i class="bi bi-calendar-check"></i>
-                    <h4>Same-Week Appointments</h4>
-                    <p>Most consultations are available within the week, with evening slots on Tuesdays and Thursdays</p>
-                  </div>
-                </div><!-- End Icon Box -->
-
-                <div class="col-xl-4 d-flex align-items-stretch">
-                  <div class="icon-box" data-aos="zoom-out" data-aos-delay="400">
-                    <i class="bi bi-award"></i>
-                    <h4>Accredited Specialists</h4>
-                    <p>Consultant-led care across cardiology, neurology, pediatrics and ophthalmology</p>
-                  </div>
-                </div><!-- End Icon Box -->
-
-                <div class="col-xl-4 d-flex align-items-stretch">
-                  <div class="icon-box" data-aos="zoom-out" data-aos-delay="500">
-                    <i class="bi bi-clipboard2-pulse"></i>
-                    <h4>Clear Care Plans</h4>
-                    <p>Plain-language results and a written summary after every visit — no surprises</p>
-                  </div>
-                </div><!-- End Icon Box -->
-
-              </div>
+    <!-- Page Title -->
+    <div class="page-title" data-aos="fade">
+      <div class="heading">
+        <div class="container">
+          <div class="row d-flex justify-content-center text-center">
+            <div class="col-lg-8">
+              <h1>Book an Appointment</h1>
+              <p class="mb-0">Choose a service, pick a date and time that suits you, and our scheduling team will confirm by email.</p>
             </div>
           </div>
-        </div><!-- End  Content-->
-
+        </div>
       </div>
+      <nav class="breadcrumbs">
+        <div class="container">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">Book an Appointment</li>
+          </ol>
+        </div>
+      </nav>
+    </div><!-- End Page Title -->
 
-    </section><!-- /Hero Section -->
+    <!-- Appointment Section -->
+    <section id="appointment" class="appointment section">
 
-    <!-- Stats Section -->
-    <section id="stats" class="stats section light-background">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Appointment Request</h2>
+        <p>All fields are required &middot; booking takes under two minutes</p>
+      </div>
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="row gy-4">
-
-          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
-            <i class="fa-solid fa-user-doctor"></i>
-            <div class="stats-item">
-              <span data-purecounter-start="0" data-purecounter-end="42" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Specialists</p>
+        <form id="appointmentForm" class="php-email-form" novalidate>
+          <div class="row">
+            <div class="col-md-4 form-group">
+              <input type="text" name="name" class="form-control" id="apptName" placeholder="Your Name" required>
             </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
-            <i class="fa-regular fa-hospital"></i>
-            <div class="stats-item">
-              <span data-purecounter-start="0" data-purecounter-end="12" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Departments</p>
+            <div class="col-md-4 form-group mt-3 mt-md-0">
+              <input type="email" class="form-control" name="email" id="apptEmail" placeholder="Your Email" required>
             </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
-            <i class="fas fa-house-medical"></i>
-            <div class="stats-item">
-              <span data-purecounter-start="0" data-purecounter-end="6" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Care Centers</p>
+            <div class="col-md-4 form-group mt-3 mt-md-0">
+              <input type="tel" class="form-control" name="phone" id="apptPhone" placeholder="Your Phone" required>
             </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
-            <i class="fas fa-award"></i>
-            <div class="stats-item">
-              <span data-purecounter-start="0" data-purecounter-end="25" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Years of Service</p>
+          </div>
+          <div class="row">
+            <div class="col-md-4 form-group mt-3">
+              <input type="datetime-local" name="date" class="form-control datepicker" id="apptDate" required aria-label="Preferred date and time">
             </div>
-          </div><!-- End Stats Item -->
+            <div class="col-md-4 form-group mt-3">
+              <select name="service" id="apptService" class="form-select" required aria-label="Select service">
+                <option value="">Select Service</option>
+                <option value="CARD-CONSULT">Cardiology Consultation</option>
+                <option value="NEURO-CONSULT">Neurology Consultation</option>
+                <option value="PEDIA-CHECK">Pediatric Check-Up</option>
+                <option value="EYE-EXAM">Comprehensive Eye Exam</option>
+              </select>
+            </div>
+            <div class="col-md-4 form-group mt-3">
+              <select name="department" id="apptDepartment" class="form-select" required aria-label="Select department">
+                <option value="">Select Department</option>
+                <option value="Cardiology">Cardiology</option>
+                <option value="Neurology">Neurology</option>
+                <option value="Pediatrics">Pediatrics</option>
+                <option value="Ophthalmology">Ophthalmology</option>
+                <option value="General Medicine">General Medicine</option>
+              </select>
+            </div>
+          </div>
 
+          <div class="mt-3">
+            <div class="error-message"></div>
+            <div class="text-center"><button type="submit">Confirm Booking</button></div>
+            <p class="text-center mt-3 mb-0"><small>Please do not include medical details in this form. Any clinical
+              information is collected privately and securely during your visit.</small></p>
+          </div>
+        </form>
+
+        <div id="appointmentConfirmation" class="d-none text-center mt-4">
+          <i class="bi bi-check-circle" style="font-size: 3rem; color: #3fbbc0;"></i>
+          <h3 class="mt-3">Appointment request received</h3>
+          <p class="mb-1">Thank you — our scheduling team will confirm shortly by email.</p>
+          <p class="mb-1"><strong>Service:</strong> <span id="confService"></span> (<span id="confDepartment"></span>)</p>
+          <p class="mb-1"><strong>Preferred date:</strong> <span id="confDate"></span></p>
+          <p class="mb-4"><strong>Confirmation to:</strong> <span id="confEmail"></span></p>
+          <a href="index.html" class="cta-btn d-inline-block">Back to Home</a>
         </div>
 
       </div>
 
-    </section><!-- /Stats Section -->
-
-    <!-- Services Section -->
-    <section id="services" class="services section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Our Services</h2>
-        <p>Consultations, check-ups and diagnostics — browse the directory and book online</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="fas fa-heartbeat"></i>
-              </div>
-              <a href="service-card-consult.html" class="stretched-link">
-                <h3>Cardiology Consultation</h3>
-              </a>
-              <p>A one-on-one visit with a consultant cardiologist to review your heart health and plan next steps.</p>
-              <p class="mb-0"><small><strong>Cardiology</strong> &middot; Consultation &middot; 45 minutes</small></p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="fas fa-brain"></i>
-              </div>
-              <a href="service-neuro-consult.html" class="stretched-link">
-                <h3>Neurology Consultation</h3>
-              </a>
-              <p>An unhurried consultation with a senior neurologist, with same-week appointments available.</p>
-              <p class="mb-0"><small><strong>Neurology</strong> &middot; Consultation &middot; 60 minutes</small></p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="fas fa-child"></i>
-              </div>
-              <a href="service-pedia-check.html" class="stretched-link">
-                <h3>Pediatric Check-Up</h3>
-              </a>
-              <p>A friendly, age-appropriate wellness check for children from 12 months to 16 years.</p>
-              <p class="mb-0"><small><strong>Pediatrics</strong> &middot; Preventive Care &middot; 30 minutes</small></p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="fas fa-eye"></i>
-              </div>
-              <a href="service-eye-exam.html" class="stretched-link">
-                <h3>Comprehensive Eye Exam</h3>
-              </a>
-              <p>A complete vision and eye-health assessment using modern digital imaging equipment.</p>
-              <p class="mb-0"><small><strong>Ophthalmology</strong> &middot; Diagnostics &middot; 40 minutes</small></p>
-            </div>
-          </div><!-- End Service Item -->
-
-        </div>
-
-        <div class="text-center mt-5" data-aos="fade-up">
-          <a href="services.html" class="cta-btn d-inline-block">View the Full Service Directory</a>
-        </div>
-
-      </div>
-
-    </section><!-- /Services Section -->
+    </section><!-- /Appointment Section -->
 
   </main>
 
